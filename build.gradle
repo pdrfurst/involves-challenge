@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "com.involves.Application"
+
+group = 'com.involves'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+run {
+    standardInput = System.in
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
+
